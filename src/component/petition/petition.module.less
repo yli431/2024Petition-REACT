@@ -1,0 +1,55 @@
+.public{
+  width:80%;
+  @media(max-width:1000px){
+    width:100%;
+  }
+  margin:0 auto;
+  position:relative;
+}
+.article{
+  .public();
+  background:white;
+  padding:20px;
+  box-sizing:border-box;
+  margin-top: 20px;
+  .nav{
+    position:absolute;
+    button{
+      background: #386AAC;
+      border: none;
+      color: white;
+      padding: 6px;
+      border-radius: 2px;
+      cursor:pointer;
+    }
+  }
+  .petitionTitle{
+    color:#386AAC;
+    text-align:center;
+  }
+  .petOther{
+    display:flex;
+    list-style-type:none;
+    padding-left:0;
+    color:#999999;
+    justify-content:center;
+    li{
+      padding:0 10px;
+      &:first-child{
+        padding-left:0;
+      }
+    }
+    .timeIcon{
+      width: 16px;
+      vertical-align: middle;
+      margin-right: 4px;
+      margin-top: -3px;
+    }
+  }
+  .petimg{
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+  }
+
+}
